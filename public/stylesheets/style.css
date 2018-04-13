@@ -1,0 +1,136 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.thamgia{
+  margin-top: 7px;
+  height: 30px;
+  width: 145px;
+  background-color: #5fbaff;
+  border-radius:  5px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'open_sansregular',"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+.thamgia a{
+  color: white;
+}
+.thamgia :hover{
+  text-decoration: none;
+}
+.banner img{
+  margin-top: 50px;
+  width: 600px;
+  height: 487px;
+}
+#title{
+  font-size: 60px;
+  font-family: 'open_sansregular',"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+.left{
+  padding-left: 125px;
+  padding-top: 90px;
+  font-size: 22px;
+  color: #533d8a;
+  font-family: 'open_sansregular',"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+.thamgiangay{
+  height: 40px;
+  width: 300px;
+  background-color: #533d8a;
+  border-radius:  3px;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 8px;
+  font-family: 'open_sansregular',"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+.thamgiangay :hover{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.thamgiangay a{
+  color: white;
+}
+.brand{
+  background-color: #cdcfd0;
+  width: 100%;
+  height: 70px;
+  padding-top: 7px;
+  padding-right: 15px;
+}
+.fixbrand img{
+  width: 110px;
+  height: 60px;
+}
+#bgr{
+  height: 701px;
+  width: 100%;
+  position: relative;
+}
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.bgr-left{
+  background-color: #432a66;
+  color: #897a9f;
+  height: 376px;
+  width: 263px;
+  margin-left: -430px;
+  margin-top: -275px;
+}
+.right{
+  background-color: white;
+  width: 399px;
+  height: 410px;
+  margin-left: -40px;
+  margin-top: -395px;
+  box-shadow: 0px 11px 40px 0px black;
+}
+.form-group{
+  width: 250px;
+  height: 45px;
+  border-radius: 3px;
+}
+.fixform{
+  padding-top: 50px;
+}
+.btn{
+  background-color: #432a66;
+  color: white;
+  width: 250px;
+  height: 45px;
+}
+.bot{
+  padding-top: 20px;
+}
+.bot a{
+  color: #888;
+}
+.bgr-left{
+  padding-top: 70px;
+}
+.btn-join{
+  background-color: transparent;
+  color: white;
+  height: 50px;
+  width: 220px;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding-top: 6px;
+}
+.btn-join :hover{
+  text-decoration: none;
+  color: white;
+}
+.btn-join a{
+  color: white;
+}
+#icontop{
+  height: 100px;
+  width: 100px;
+}
