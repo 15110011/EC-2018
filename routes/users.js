@@ -1,9 +1,47 @@
 var express = require('express');
 var router = express.Router();
-
+var User = require('../models/Users').User
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.redirect('/')
 });
-
+router.post('/signup', (req, res) =>{
+  if (req.body.username &&
+    req.body.password &&
+    req.body.passwordConf) {
+    var userData = {
+      username: req.body.username,
+      password: req.body.password,
+      passwordConf: req.body.passwordConf,
+    }
+    //use schema.create to insert data into the db
+    User.create({username:userData.username,password:userData.password,passwordConf:userData.passwordConf}).
+    then(user=>{
+      console.log(user)
+      res.redirect('/users')
+    }).catch(err=>console.error(err))
+  }
+});
+router.get('/login', (req, res) =>{
+  console.log(req.session)
+  if (req.session.user)
+    return res.redirect('/blog')
+  res.render('login',{ title: 'Login','error':'' })
+})
+router.post('/login', (req, res) => {
+  username = req.body.username;
+  password = req.body.password;
+  console.log('123')
+  Users.findOne({'username' : username}, (err, user) => {
+    if (err) return console.log(err)
+    user.comparePassword(password, function(err, isMatch) {
+      if (err) return console.log(err)
+      if (isMatch) {
+        req.session.user = user;
+        console.log(req.session.user)
+        res.redirect('/users')
+      } else res.render('login',{ title: 'Login','error':'Mật khẩu không chính xác' })
+    })
+  })
+})
 module.exports = router;

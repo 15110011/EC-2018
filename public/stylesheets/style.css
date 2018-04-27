@@ -1,3 +1,4 @@
+@import url('/javascripts/fa-svg-with-js.css');
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -6,6 +7,7 @@ a {
   color: #00B7FF;
 }
 .thamgia{
+  padding-top: 2px;
   margin-top: 7px;
   height: 30px;
   width: 145px;
@@ -18,8 +20,9 @@ a {
 .thamgia a{
   color: white;
 }
-.thamgia :hover{
+.thamgia a:hover{
   text-decoration: none;
+  color: lightslategray;
 }
 .banner img{
   margin-top: 50px;
@@ -47,8 +50,8 @@ a {
   padding-top: 8px;
   font-family: 'open_sansregular',"Helvetica Neue",Helvetica,Arial,sans-serif
 }
-.thamgiangay :hover{
-  color: whitesmoke;
+.thamgiangay a:hover{
+  color: lightslategray;
   text-decoration: none;
 }
 .thamgiangay a{
@@ -99,11 +102,34 @@ a {
 .fixform{
   padding-top: 50px;
 }
+.boxsignup{
+  position: absolute;
+  background-color: white;
+  width: 399px;
+  height: 410px;
+  top: 20%;
+  left: 35%;
+}
+.signupform{
+  position: absolute;
+  width: 250px;
+  height: 45px;
+  border-radius: 3px;
+  top: 35%;
+  left: 20%;
+}
 .btn{
   background-color: #432a66;
   color: white;
   width: 250px;
   height: 45px;
+}
+.btn a{
+  color: white;
+}
+.btn a:hover{
+  color: violet;
+  text-decoration: none;
 }
 .bot{
   padding-top: 20px;
@@ -134,3 +160,50 @@ a {
   height: 100px;
   width: 100px;
 }
+.pictop{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.navbar{
+  background-color: #543a99;
+  width: 100%;
+}
+.navbaruser a{
+  color: white;
+  font-style: italic;
+  font-size: 14px;
+}
+.navbaruser a:hover{
+  color: whitesmoke;
+  font-family: 'open_sansregular',"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menuoption{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.box{
+  margin-top: 20px;
+  border: 1px solid #e1e1e1;
+  width: 700px;
+  height: 153px;
+}
+.fixword{
+  color: #888888;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.scope{
+  border: 1px solid #e1e1e1;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  padding-top: 15px;
+  padding-left: 4px;
+}
+.scope i:hover{
+  color: #7e50b0;
+  background-color: #7e50b0;
+}
+
