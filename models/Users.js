@@ -3,7 +3,9 @@ var Sequelize = require('sequelize')
     // Schema = sequelize.Schema;
 var bcrypt = require('bcrypt');
 
-var User = sequelize.define('user',{
+var User = sequelize.define('users',{
+    name: {type: Sequelize.STRING, allowNull:false},
+    phonenumber: {type: Sequelize.BIGINT, allowNull:false},
     username: {type: Sequelize.STRING, allowNull: false, unique : true},
     password: {type: Sequelize.STRING,allowNull: false},
     passwordConf: {type: Sequelize.STRING, allowNull: false}

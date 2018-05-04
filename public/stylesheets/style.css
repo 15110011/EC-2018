@@ -22,7 +22,7 @@ a {
 }
 .thamgia a:hover{
   text-decoration: none;
-  color: lightslategray;
+  color: #004c86;
 }
 .banner img{
   margin-top: 50px;
@@ -51,7 +51,7 @@ a {
   font-family: 'open_sansregular',"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 .thamgiangay a:hover{
-  color: lightslategray;
+  color: #8861e8;
   text-decoration: none;
 }
 .thamgiangay a{
@@ -109,13 +109,14 @@ a {
   height: 410px;
   top: 20%;
   left: 35%;
+  box-shadow: 0px 11px 40px 0px black;
 }
 .signupform{
   position: absolute;
   width: 250px;
   height: 45px;
   border-radius: 3px;
-  top: 35%;
+  top: 8%;
   left: 20%;
 }
 .btn{

@@ -16,8 +16,14 @@
         <div class="login">
             <img id="bgr" src="/images/background.jpg" alt="bgr" style="position: relative;">
             <div class="boxsignup">
-                <center><img style="margin-top: 15px;" id="icontop" src="/images/account.png" alt="account"></center>
+                <!-- <center><img style="margin-top: 15px;" id="icontop" src="/images/account.png" alt="account"></center> -->
                 <form class = "signupform" method ="POST" action="/signup">
+                    <div class="form-group">                           
+                        <input style="border-radius: 10px;" type="name" class="form-control" id="exampleInputName"  placeholder="Họ và tên" name='name'>                       
+                    </div>
+                    <div class="form-group">                           
+                        <input style="border-radius: 10px;" type="phonenumber" class="form-control" id="exampleInputPhoneNumber"  placeholder="Số điện thoại" name='phonenumber'>                       
+                    </div>
                     <div class="form-group">                           
                         <input style="border-radius: 10px;" type="email" class="form-control" id="exampleInputEmail1"  placeholder="Tên đăng nhập" name='username'>                       
                     </div>
@@ -25,7 +31,7 @@
                         <input style="border-radius: 10px;" type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu" name='password'>
                     </div>
                     <div class="form-group">
-                        <input style="border-radius: 10px;" type="password" class="form-control" id="exampleInputPassword1" placeholder="Nhập lại mật khẩu" name='passwordConf'>
+                        <input style="border-radius: 10px;" type="password" class="form-control" id="exampleInputPassword2" placeholder="Nhập lại mật khẩu" name='passwordConf'>
                     </div>
                     <input style="border-radius: 25px; padding-top: 8px" class="btn" type="submit" value='Đăng ký'/>
                 </form>
