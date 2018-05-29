@@ -7,8 +7,6 @@
   },
   "dependencies": {
     "bcrypt": "^2.0.1",
-    "bcrypt-nodejs": "0.0.3",
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
@@ -22,7 +20,7 @@
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
     "mysql2": "^1.5.3",
-    "nodemon": "^1.17.3",
+    "nodemon": "^1.17.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.37.6",

@@ -8,7 +8,8 @@ var User = sequelize.define('users',{
     phonenumber: {type: Sequelize.BIGINT, allowNull:false},
     username: {type: Sequelize.STRING, allowNull: false, unique : true},
     password: {type: Sequelize.STRING,allowNull: false},
-    passwordConf: {type: Sequelize.STRING, allowNull: false}
+    passwordConf: {type: Sequelize.STRING, allowNull: false},
+    money: {type: Sequelize.STRING, allowNull:true}
 });
 User.sync()
 
@@ -23,4 +24,5 @@ User.beforeCreate((user, options) => {
             throw new Error(); 
         });
 });
+
 module.exports = User

@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
-var bcrypt = require('bcrypt')
 var flash = require('connect-flash')
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../models/Users')
+var bcrypt = require('bcrypt');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
@@ -30,7 +30,7 @@ if (req.body.name &&
     passwordConf: req.body.passwordConf,
   }
   //use schema.create to insert data into the db
-  User.create({name:userData.name, phonenumber:userData.phonenumber, username:userData.username, password:userData.password, passwordConf:userData.passwordConf}).
+  User.create({name:userData.name, phonenumber:userData.phonenumber, username:userData.username, password:userData.password, passwordConf:userData.passwordConf, money:userData.money}).
   then(user=>{
     console.log(user)
     res.redirect('/users')
@@ -80,4 +80,14 @@ router.get('/logout', function(req, res) {
   req.logout();
   res.redirect('/login');
 });
+router.get('/users/send', (req, res, next) => {
+  res.render('send', { title: 'Nạp tiền' })
+});
+router.get('/users/trans', (req, res, next) => {
+  res.render('trans', { title: 'Chuyển Tiền' })
+});
+router.get('/users/save', (req, res, next) => {
+  res.render('save', { title: 'Gửi Tiết Kiệm' })
+});
+
 module.exports = router;

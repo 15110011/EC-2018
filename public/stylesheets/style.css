@@ -207,4 +207,11 @@ a {
   color: #7e50b0;
   background-color: #7e50b0;
 }
-
+.sendform{
+  position: absolute;
+  width: 250px;
+  height: 45px;
+  border-radius: 3px;
+  top: 40%;
+  left: 20%;
+}

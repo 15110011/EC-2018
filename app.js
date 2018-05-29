@@ -11,7 +11,6 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local'), Strategy;
 var bcrypt = require('bcrypt');
 
-
 var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
 var dbRouter = require('./models/db');
